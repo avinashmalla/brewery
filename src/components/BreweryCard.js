@@ -17,7 +17,7 @@ const BreweryCard = (brewer) => {
                     City: {brewer.city}
                 </Typography>
             </CardContent>
-            <CardActions style={{backgroundColor: "#FFF0B4", justifyContent: 'center'}}> 
+            <CardActions style={{backgroundColor: "#FFDCD1", justifyContent: 'center'}}> 
                 <Button size="large" variant = "text" onClick={() => {navigate(`/${brewer.id}`);}}>View Details</Button>
             </CardActions>
         </React.Fragment>

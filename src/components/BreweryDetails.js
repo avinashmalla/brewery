@@ -55,7 +55,7 @@ const BreweryDetails = () => {
                             Website: {brewers.website_url}
                         </Typography> 
                     </CardContent>
-                    <CardActions style={{backgroundColor: "#FFF0B4", justifyContent: 'center'}}> 
+                    <CardActions style={{backgroundColor: "#FFDCD1", justifyContent: 'center'}}> 
                         <Button size="large" onClick={() => {navigate('/')}}> Go Back <HomeOutlinedIcon color="primary" /></Button>
                     </CardActions> 
                     </Card>

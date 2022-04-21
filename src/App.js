@@ -1,5 +1,5 @@
 import './App.css';
-import SearchBrewers from './components/searchBrewers';
+import SearchBrewers from './components/SearchBrewers';
 import BreweryDetails from './components/BreweryDetails';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
