@@ -10,7 +10,7 @@ const BreweryDetails = () => {
     let navigate = useNavigate();
     
     useEffect(() => {
-        axios.get('https://api.openbrewerydb.org/breweries/' +  brewer )
+        axios.get('https://api.openbrewerydb.org/breweries/' +  {brewer} )
         .then(res => {
             console.log(res)
             setBrewers(res.data)
