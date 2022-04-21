@@ -16,7 +16,7 @@ const SearchBrewers = () => {
         .catch(err => {
             console.log(err)
         })
-      }, [])
+      }, []);
 
     return ( 
         <>
