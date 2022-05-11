@@ -26,7 +26,12 @@ const BreweryDetails = () => {
             <Container maxWidth = "md">
                 {
                     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', lineHeight: 2}}>
-                    <CardContent style={{backgroundColor: "#FFDCD1", justifyContent: 'center'}}> 
+                    <CardContent 
+                        style={{
+                            background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+                            color: 'white', 
+                            justifyContent: 'center'
+                        }}> 
                         <Typography gutterBottom variant = "body2" style={{ fontWeight: 600 }}>
                             Name: {brewers.name}
                         </Typography>
@@ -55,7 +60,7 @@ const BreweryDetails = () => {
                             Website: {brewers.website_url}
                         </Typography> 
                     </CardContent>
-                    <CardActions style={{backgroundColor: "#FFDCD1", justifyContent: 'center'}}> 
+                    <CardActions style={{backgroundColor: "#cad331", justifyContent: 'center'}}> 
                         <Button size="large" onClick={() => {navigate('/')}}> Go Back <HomeOutlinedIcon color="primary" /></Button>
                     </CardActions> 
                     </Card>
