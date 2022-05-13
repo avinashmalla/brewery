@@ -1,7 +1,7 @@
 import './App.css';
-import SearchBrewers from './components/SearchBrewers';
-import BreweryDetails from './components/BreweryDetails';
-import DataTable from './components/DataTable';
+import SearchBrewers from './components/SearchBrewers.js';
+import BreweryDetails from './components/BreweryDetails.js';
+import DataTable from './components/DataTable.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar';
 
