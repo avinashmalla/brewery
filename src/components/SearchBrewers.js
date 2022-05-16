@@ -1,5 +1,5 @@
-import React, { useState, useEffect, Component } from 'react';
-import { CssBaseline, Typography, TextField, Container, Box, Grid, FormControl, FormLabel, FormGroup, FormControlLabel, FormHelperText, Checkbox, InputLabel, Select, MenuItem } from "@mui/material";
+import React, { Component } from 'react';
+import { CssBaseline, Typography, TextField, Container, Box, Grid, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox, InputLabel, Select, MenuItem } from "@mui/material";
 import axios from 'axios';
 import BreweryCard from "./BreweryCard";
 

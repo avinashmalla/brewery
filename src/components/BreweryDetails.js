@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { CssBaseline, Container, Card, CardContent, CardActions, Button, Typography } from "@mui/material";
+import { CssBaseline, Container, Card, CardContent, CardActions, Button, Typography, Link } from "@mui/material";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -57,7 +57,7 @@ const BreweryDetails = () => {
                             Phone: {brewers.phone}
                         </Typography>
                         <Typography variant="body2">
-                            Website: {brewers.website_url}
+                            Website: <Link href={brewers.website_url}>{brewers.website_url}</Link>
                         </Typography> 
                     </CardContent>
                     <CardActions style={{backgroundColor: "#cad331", justifyContent: 'center'}}> 

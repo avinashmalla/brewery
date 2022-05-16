@@ -1,19 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { Container, CssBaseline,  } from '@mui/material';
 import axios from 'axios';
-
-// function fixAddress(params: GridValueSetterParams ) {
-//     const [firstName, lastName] = params.value!.toString().split(' ');
-//     return { ...params.row, firstName, lastName };
-// }
-
-// export default fixAddress;
 
 const columns = [
     {field: 'name', headerName: 'Name', minWidth: 230},
     {field: 'brewery_type', headerName: 'Brewery Type', minWidth: 100},
-    // {field: 'address', headerName: 'Address', minWidth: 150, valueSetter = fixAddress},
     {
         field: 'street', 
         headerName: 'Street', 
@@ -22,7 +14,6 @@ const columns = [
             if (params.value == null) {
               return 'NA';
             }
-            const valueFormatted = Number(params.value * 100).toLocaleString();
             return params.value;
           },
     },
@@ -57,7 +48,6 @@ const DataTable = () => {
                         columns={columns}
                         pageSize={10}
                         rowsPerPageOptions={[10]}
-                        // disableSelectionOnClick
                         components={{
                             Toolbar: GridToolbar,
                         }} />
